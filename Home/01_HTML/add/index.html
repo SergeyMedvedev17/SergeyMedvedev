@@ -42,15 +42,55 @@ o | x |
 <code>
     #!/usr/local/bin/perl<br>
     print "Content&ndash;type: text/html\n\n";<br>
-    print "<H1>Hello World</H1>\n";
+    print "&lt;H1&gt;Hello World&lt;/H1&gt;\n";
 </code>
-<strong>Программа выведет:</strong>
+<br>
+<p>Программа выведет:</p>
+<p><code>Hello, World!</code></p>
+<p>Однако в браузере у нас будет отображаться результат выполнения этой программы:</p>
+<h1>Hello, World!</h1>
 <hr>
 <h3>Комментарии и литералы(мнемоники) в HTML</h3>
 <pre>
-&lt; !&ndash; &ndash; это комментарий &ndash; &ndash;&gt;
-                &lt; !&ndash; &ndash; и это также комментарий,
-                занимающий более одной строки &ndash; &ndash;&gt;
+&lt; !-- это комментарий --&gt;
+                &lt; !-- и это также комментарий,
+                занимающий более одной строки --&gt;
 </pre>
+<hr>
+<h3>Теги над­ и подстрочных символов</h3>
+<p><center><strong>Магазин работает:</strong></center></p>
+<span><center>с 08<sup><ins>30</ins></sup> до 18<sup><ins>30</ins></sup></center></span>
+<span><center>обед с 13<sup><ins>00</ins></sup> до 14<sup><ins>00</ins></sup></center></span>
+<span><center>выходной: <ins>суббота, воскресенье</center></ins></span>
+<hr>
+<h3>Вот такой текст</h3>
+<sup><strong>Э</strong></sup>
+<sub><strong>т</strong></sub>
+<sup><strong>о</strong></sup>
+&nbsp;
+<sub><strong>п</strong></sub>
+<sup><strong>р</strong></sup>
+<sub><strong>о</strong></sub>
+<sup><strong>с</strong></sup>
+<sub><strong>т</strong></sub>
+<sup><strong>о</strong></sup>
+&nbsp;
+<sub><strong>в</strong></sub>
+<sup><strong>е</strong></sup>
+<sub><strong>с</strong></sub>
+<sup><strong>ё</strong></sup>
+<sub><strong>л</strong></sub>
+<sup><strong>ы</strong></sup>
+<sub><strong>й</strong></sub>
+&nbsp;
+<sup><strong>т</strong></sup>
+<sub><strong>е</strong></sub>
+<sup><strong>к</strong></sup>
+<sub><strong>с</strong></sub>
+<sup><strong>т</strong></sup>
+<hr>
+<h3>Акроним и курсив</h3>
+<abbr title="Теоретическая физика">ТФ:</abbr>&nbsp;<span>Y(x)=e<sup><em>-iπx</em></sup>+log<sub><em>x</em></sub>4</span>
+<hr>
 </body>
 </html>

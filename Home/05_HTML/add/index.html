@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_HTML_add</title>
+</head>
+<body>
+    <h1 align="center">Заполните анкету</h1>
+    <form action="http://fe.it-academy.by/TestForm.php" name="form">
+    <fieldset>
+        <legend>Личные данные</legend>
+        <input type="text" name="surname" maxlength="25" required autofocus placeholder="Фамилия" pattern="[А-Яа-яЁё]\S"><br>
+        <input type="text" name="name" maxlength="20" placeholder="Имя" pattern="[А-Яа-яЁё]\S"><br>
+        <input type="text" name="patronymic" maxlength="24" placeholder="Отчество" pattern="[А-Яа-яЁё]\S">
+        <legend>Паспортные данные</legend>
+        <input type="text" name="passport_series" pattern="[A-Z]{2}">
+        <input type="text" pattern="[0-9]{1,7}\d" name="passport_number">
+
+    </fieldset>
+    </form>
+</body>
+</html>

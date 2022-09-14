@@ -14,11 +14,90 @@
         <input type="text" name="surname" maxlength="25" required autofocus placeholder="Фамилия" pattern="[А-Яа-яЁё]\S"><br>
         <input type="text" name="name" maxlength="20" placeholder="Имя" pattern="[А-Яа-яЁё]\S"><br>
         <input type="text" name="patronymic" maxlength="24" placeholder="Отчество" pattern="[А-Яа-яЁё]\S">
-        <legend>Паспортные данные</legend>
-        <input type="text" name="passport_series" pattern="[A-Z]{2}">
-        <input type="text" pattern="[0-9]{1,7}\d" name="passport_number">
+        <fieldset>
+            <legend>Паспортные данные</legend>
+            <input type="text" name="passport_series" pattern="[A-Z]{2}" placeholder="AA">
+            <input type="text" pattern="[0-9]{1,7}\d" name="passport_number" placeholder="1234567">
+        </fieldset>
+        <fieldset>
+            <legend>Дата рождения</legend>
+            <input type="text" pattern="[0-9]{4}"><br>
+            <select name="month">
+                <option value="January">Январь</option>
+                <option value="February">Февраль</option>
+                <option value="March">Март</option>
+                <option value="April">Апрель</option>
+                <option value="May">Май</option>
+                <option value="June">Июнь</option>
+                <option value="July">Июль</option>
+                <option value="August">Август</option>
+                <option value="September">Сентябрь</option>
+                <option value="October">Октябрь</option>
+                <option value="November">Ноябрь</option>
+                <option value="December">Декабрь</option>
+            </select><br>
+            <input type="number" min="1" max="31" step="1"><br>
+        </fieldset>
+        <select name="country">
+            <option value="RB">РБ</option>
+            <option value="RF">РФ</option>
+        </select><br>
+        <span>Адрес:</span><br>
+        <textarea name="address"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Интересы</legend>
+        <fieldset>
+            <legend>Хобби</legend>
+            <input type="checkbox" name="hobby[]">Рыбалка<br>
+            <input type="checkbox" name="hobby[]">Астрономия<br>
+            <input type="checkbox" name="hobby[]">Дайвинг<br>
+            <input type="checkbox" name="hobby[]">Марки
+        </fieldset>
+        <fieldset>
+            <legend>Домашние животные</legend>
+            <select name="list[]" id="list" size="12" multiple>
+                <optgroup label="Попугаи">
+                      <option value="brest">Волнистый</option>
+                      <option value="minsk">Ара</option>
+                      <option value="vitebsk">Неразлучник</option>
+                </optgroup>
+                <optgroup label="Рыба">
+                      <option value="moscow">Караси</option>
+                      <option value="ryazan">Окуни</option>
+                      <option value="magadan">Осетр</option>
+                </optgroup>
+                <optgroup label="Птицы">
+                    <option value="moscow">Стая ворон</option>
+                    <option value="ryazan">Аист</option>
+                    <option value="magadan">Археоптерикс</option>
+              </optgroup>
+                </select>
+        </fieldset>
+    </fieldset>
+    <fieldset>
+        <legend>Данные для входа и восстановления пароля</legend>
+        <input type="text" placeholder="Логин"><br>
+        <input type="password" placeholder="Пароль">
+    </fieldset>
+    <fieldset>
+        <legend>Координаты</legend>
+        <input type="email" placeholder="введите адрес почты"><br>
+        <input type="url" placeholder="введите адрес сайта">
+    </fieldset>
+    <fieldset>
+        <legend>Цифры</legend>
+        <input type="number" min="-2.5" max="2.5" step="0.1"><br>
+        <input type="range" min="1" max="10"><br>
+    </fieldset>
+    <fieldset>
+        <legend>Кнопки управления</legend>
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Сбросить"><br>
+        <input type="image" src="mail.jpeg" disabled>
 
     </fieldset>
+    
     </form>
 </body>
 </html>
